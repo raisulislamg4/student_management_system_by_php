@@ -1,0 +1,181 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Comic Sans MS";
+}
+
+nav{
+	position: fixed;
+	background-color: #393939;
+	height: 7%;
+	width: 100%;
+	z-index: 1;
+}
+
+.logo{
+	font-size: 20px;
+	position: fixed;
+	left: 5%;
+	top: 10px;
+	color: white;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+ul{
+	position: relative;
+	float: right;
+	margin-right: 40px;
+}
+
+ul li{
+	display: inline-block;
+	line-height: 50px;
+	margin: 0 10px; ;
+}
+
+ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+}
+
+.main_img{
+	width: 100%;
+	height: 400px;
+}
+
+
+.section1{
+	padding-top: 70px;
+}
+
+
+.img_text{
+	position: absolute;
+	top: 12%;
+	left: 20%;
+	color: white;
+	background: rgba(76, 175, 80, 0.3);
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 30px;
+	border-radius: 50px;
+}
+
+.welcome_img{
+	width: 100%;
+	height: 250px;
+}
+
+.container{
+	padding-top: 70px;
+}
+
+.teacher{
+	width: 100%;
+	height: 300px;
+}
+
+.course{
+	width: 100%;
+	height: 300px;
+}
+
+p{
+	text-align: justify;
+	text-justify: inter-word;
+	padding-top: 5px;
+}
+
+.label_text{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.input_deg{
+	width: 30%;
+	height: 40px;
+	border-radius: 25px;
+	border: 1px solid black;
+}
+
+.contact_form{
+	padding-top: 10px;
+}
+
+.input_text{
+	width: 30%;
+	height: 120px;
+	border-radius: 25px;
+	border: 1px solid black;
+}
+
+#submit{
+	position: relative;
+	width: 15%;
+	left: 5%;
+}
+
+footer{
+	background-color: #393939;
+	height: 70px;
+	width: 100%;
+}
+
+.footer_text{
+	text-align: center;
+	color: white;
+	top: 20%;
+	position: relative;
+}
+
+.section_div{
+	padding-top: 30px;
+}
+
+.login_div_deg{
+	padding-top: 200px;
+
+}
+
+.login_title_deg{
+	background-color: rgba(0, 193, 255, 0.8);
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	width: 400px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+.login_form{
+	background-color: rgba(30, 29, 29,0.75);
+	width: 400px;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	border-radius: 5px;
+}
+
+.login_label_deg{
+	display: inline-block;
+	color: white;
+	width: 100px;
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.login_body_deg{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.login_input_deg{
+	border-radius: 5px;
+}
