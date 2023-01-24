@@ -18,7 +18,7 @@
 			<center class="login_title_deg">
 				Login Form
 			</center>
-			<form class="login_form">
+			<form action="login_check.php" method="POST" class="login_form">
 				<div>
 					<label class="login_label_deg">Username</label>
 					<input class="login_input_deg" type="text" name="username">
