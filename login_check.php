@@ -1,5 +1,7 @@
 <?php 
 require_once "db_con.php";
+// error_reporting(0);
+session_start();
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -12,13 +14,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $row = mysqli_fetch_array($result);
 
     if($row["ROLE"] == "admin"){
+        $_SESSION['username'] = $name;
+        $_SESSION['ROLE'] = "admin";
         header("location:admin_home.php");
     }
     elseif($row["ROLE"] == "student"){
+        $_SESSION['username'] = $name;
+        $_SESSION['ROLE'] = "student";
         header("location:student_home.php");
     }
     else{
-        echo "Username and Password not matched!";
+        $message = "Username or Password doesn't matched!";
+        $_SESSION['loginMessage'] = $message;
+        header("location:login.php");
     }
 }
 
