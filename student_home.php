@@ -17,5 +17,6 @@
 </head>
 <body>
     <h4>Student Dashboard</h4>
+    <a href="logout.php">Logout</a>
 </body>
 </html>

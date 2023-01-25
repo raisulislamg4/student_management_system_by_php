@@ -17,5 +17,6 @@
 </head>
 <body>
     <h2>Admin Dashboard</h2>
+    <a href="logout.php">Logout</a>
 </body>
 </html>
