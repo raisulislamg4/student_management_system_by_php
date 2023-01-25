@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login Form</title>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -17,6 +17,15 @@
 		<div class="login_div_deg">
 			<center class="login_title_deg">
 				Login Form
+
+				<h4>
+					<?php 
+						error_reporting(0);
+						session_start();
+						echo $_SESSION['loginMessage'];
+						session_destroy();
+					 ?>
+				</h4>
 			</center>
 			<form action="login_check.php" method="POST" class="login_form">
 				<div>
