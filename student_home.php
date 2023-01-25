@@ -1,8 +1,21 @@
+<?php 
+    session_start();
+    if (!isset($_SESSION['username'])) {
+        header("location:login.php");
+    }
+    elseif($_SESSION['ROLE'] == "admin"){
+        header("location:login.php");
+    }
+ ?>
+
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Student Dashboard</title>
-    </head>
-    <body>
-        <h1>Student Dashboard</h1>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Dashboard</title>
+</head>
+<body>
+    <h4>Student Dashboard</h4>
+</body>
 </html>
