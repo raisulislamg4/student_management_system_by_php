@@ -1,0 +1,21 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Comic Sans MS";
+}
+
+.header{
+	background-color: skyblue;
+	
+	line-height: 70px;
+	padding-left: 30px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.logout{
+	float: right;
+	padding-right: 30px;
+}
