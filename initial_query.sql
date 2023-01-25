@@ -1,0 +1,25 @@
+CREATE TABLE `pdbsms`.`users` (
+	`ID` INT(11) NOT NULL AUTO_INCREMENT , 
+	`USERNAME` VARCHAR(55) NOT NULL , 
+	`EMAIL` VARCHAR(55) NOT NULL , 
+	`PHONE` VARCHAR(20) NOT NULL , 
+	`ROLE` VARCHAR(20) NOT NULL , 
+	`PASSWORD` VARCHAR(255) NOT NULL , 
+	PRIMARY KEY (`ID`)) 
+ENGINE = InnoDB;
+
+INSERT INTO `users` (
+	`ID`, 
+	`USERNAME`, 
+	`EMAIL`, 
+	`PHONE`, 
+	`ROLE`, 
+	`PASSWORD`) 
+VALUES (
+	NULL, 
+	'admin', 
+	'raisulislamg4@gmail.com', 
+	'01772154668', 
+	'admin', 
+	'1234'
+	);

@@ -11,10 +11,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $result = mysqli_query($data, $sql);
     $row = mysqli_fetch_array($result);
 
-    if($row["usertype"] == "admin"){
+    if($row["ROLE"] == "admin"){
         header("location:admin_home.php");
     }
-    elseif($row["usertype"] == "student"){
+    elseif($row["ROLE"] == "student"){
         header("location:student_home.php");
     }
     else{
