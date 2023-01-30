@@ -98,25 +98,30 @@ p{
 .input_deg{
 	width: 30%;
 	height: 40px;
-	border-radius: 25px;
+	border-radius: 10px;
 	border: 1px solid black;
 }
 
-.contact_form{
+.admission_form{
+	padding-top: 10px;
+}
+
+.input_div{
 	padding-top: 10px;
 }
 
 .input_text{
 	width: 30%;
 	height: 120px;
-	border-radius: 25px;
+	border-radius: 10px;
 	border: 1px solid black;
 }
 
 #submit{
 	position: relative;
-	width: 15%;
+	width: 20%;
 	left: 5%;
+	font-weight: bold;
 }
 
 footer{

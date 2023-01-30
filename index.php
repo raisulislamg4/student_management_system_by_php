@@ -85,35 +85,35 @@
 	</div>
 
 	<center>
-		<h1 class="section_div">Contact Us</h1>
+		<h1 class="section_div">Admission Form</h1>
 	</center>
 	<div align="center" class="admission_form">
-		<form>
-			<div class="contact_form">
+		<form action="admission_form_check.php" method="POST">
+			<div class="input_div">
 				<label class="label_text">Name</label>
-				<input class="input_deg" type="text" name="">
+				<input class="input_deg" type="text" name="name">
 			</div>
-			<div class="contact_form">
+			<div class="input_div">
 				<label class="label_text">Email</label>
-				<input class="input_deg" type="text" name="">
+				<input class="input_deg" type="text" name="email">
 			</div>
-			<div class="contact_form">
+			<div class="input_div">
 				<label class="label_text">Phone</label>
-				<input class="input_deg" type="text" name="">
+				<input class="input_deg" type="text" name="phone">
 			</div>
-			<div class="contact_form">
+			<div class="input_div">
 				<label class="label_text">Message</label>
-				<textarea class="input_text"></textarea>
+				<textarea class="input_text" name="message"></textarea>
 			</div>
-			<div class="contact_form">
-				<input class="btn btn-default" id="submit" type="submit" value="Send">
+			<div class="input_div">
+				<input class="btn btn-default" id="submit" type="submit" value="Apply" name="apply">
 			</div>
 		</form>
 	</div>
 
 	<footer>
 		<h4 class="footer_text">Copyright © 2023 | All Rights Reserve by DB_Group-3_Raisul_Islam</h4>
-		<h5 class="footer_text">The Team: 58_Raisul, 57_Salahuddin, 47_Shahinur, 42_Nazrul, 36_Kallol, 50_Rakibul, 26_Chadni</h5>
+		<h5 class="footer_text">The Team: 58_Raisul, 57_Salahuddin</h5>
 	</footer>
 
 <!-- Latest compiled and minified JavaScript -->

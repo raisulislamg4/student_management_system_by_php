@@ -14,6 +14,16 @@ CREATE TABLE `pdbsms`.`users` (
 	PRIMARY KEY (`ID`)) 
 ENGINE = InnoDB;
 
+--CREATE ADMISSIONS TABLE
+CREATE TABLE `pdbsms`.`ADMISSIONS` (
+`ID` INT( 11 ) NOT NULL ,
+`NAME` VARCHAR( 50 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+`EMAIL` VARCHAR( 55 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+`PHONE` VARCHAR( 20 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+`MESSAGE` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ,
+PRIMARY KEY ( `ID` )
+) ENGINE = INNODB
+
 -- insert two initial users to the USER table
 INSERT INTO `users` (
 	`ID`, 
