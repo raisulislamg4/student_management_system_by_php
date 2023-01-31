@@ -40,6 +40,11 @@ ul li a{
 	font-size: 17px;
 }
 
+ul li a:hover{
+	text-decoration: none;
+	color: skyblue;
+}
+
 .main_img{
 	width: 100%;
 	height: 400px;
