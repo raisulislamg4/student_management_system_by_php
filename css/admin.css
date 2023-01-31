@@ -33,16 +33,22 @@ ul{
 
 ul li{
 	list-style: none;
-	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	font-size: 15px;
 }
 
 ul li a{
 	color: white;
 	font-weight: bold;
+
 }
 
 ul li a:hover{
 	color: skyblue!important;
 	text-decoration: none;
+}
+
+li:hover {
+  	background-color: rgba(0, 0, 0, 0.25);
 }
