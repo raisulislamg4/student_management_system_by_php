@@ -22,7 +22,7 @@ CREATE TABLE `pdbsms`.`ADMISSIONS` (
 `PHONE` VARCHAR( 20 ) NOT NULL ,
 `MESSAGE` VARCHAR( 255 ) NOT NULL ,
 PRIMARY KEY ( `ID` )
-) ENGINE = INNODB
+) ENGINE = INNODB;
 
 -- insert two initial users to the USER table
 INSERT INTO `users` (
