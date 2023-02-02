@@ -31,18 +31,26 @@ ul{
 ul li{
 	display: inline-block;
 	line-height: 50px;
-	margin: 0 10px; ;
+	margin: 0 10px;
 }
 
 ul li a{
 	text-decoration: none;
 	color: white;
 	font-size: 17px;
+	padding: 10px;
 }
 
 ul li a:hover{
 	text-decoration: none;
 	color: skyblue;
+	padding-top: 2px;
+
+}
+
+li:hover{
+	background-color: rgba(0, 0, 0, 0.25);
+	padding-bottom: 8px;
 }
 
 .main_img{
