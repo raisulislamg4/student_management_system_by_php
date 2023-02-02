@@ -1,6 +1,7 @@
 <?php 
 
 require_once "db_con.php";
+session_start();
 
 if (isset($_POST['apply'])) {
     
@@ -9,16 +10,21 @@ if (isset($_POST['apply'])) {
     $phone_data = $_POST['phone'];
     $message_data = $_POST['message'];
 
-    $sql="INSERT INTO ADMISSIONS(NAME, EMAIL, PHONE, MESSAGE)
+    if ($name_data && $email_data && $phone_data) {
+
+        $sql="INSERT INTO ADMISSIONS(NAME, EMAIL, PHONE, MESSAGE)
             VALUES('$name_data', '$email_data', '$phone_data', '$message_data')";
 
-    $result = mysqli_query($data, $sql);
+        $result = mysqli_query($data, $sql);
 
-    if ($result) {
-        echo "Your Application Has Submitted Successfully!";
+        if ($result) {
+            $_SESSION['message'] = "Your Application Submitted Successfully!";
+            header("location:index.php");
+        }
     }
     else{
-        echo "Apply Failed! Please Try Again Later";
+        $_SESSION['message'] = "Apply Failed! Please Try Again with Apropriate Information!";
+        header("location:index.php");
     }
 
 }
