@@ -29,5 +29,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         header("location:login.php");
     }
 }
-
+echo "<h2>Opss! <br>Error: 404 Not Found</h2>"
 ?>

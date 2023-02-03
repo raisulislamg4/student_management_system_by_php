@@ -28,5 +28,6 @@ if (isset($_POST['apply'])) {
     }
 
 }
+echo "<h2>Opss! <br>Error: 404 Not Found</h2>"
 
 ?>
