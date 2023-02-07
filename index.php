@@ -130,7 +130,7 @@ if ($_SESSION['message']) {
 
 	<footer>
 		<h4 class="footer_text">Copyright © 2023 | All Rights Reserve by DB_Group-3_Raisul_Islam</h4>
-		<h5 class="footer_text">The Team: 58_Raisul, 57_Salahuddin</h5>
+		<h5 class="footer_text">The Team: 58_Raisul, 57_Salahuddin, 42_Nazrul</h5>
 	</footer>
 
 <!-- Latest compiled and minified JavaScript -->
