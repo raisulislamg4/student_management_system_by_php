@@ -23,7 +23,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="admin_home.php">Admin Dashboard</a>
+        <a href="admin_home.php">Admin Portal</a>
         <div class="logout">
             <a class="btn btn-primary" href="logout.php">Logout</a>
         </div>
@@ -50,6 +50,12 @@
             </li>
             <li>
                 <a href="">View Courses</a>
+            </li>
+            <li>
+                <a href="add_user.php">Add User</a>
+            </li>
+            <li>
+                <a href="user_list.php">View Users</a>
             </li>
         </ul>
     </aside>
