@@ -1,18 +1,22 @@
 <?php 
 include 'admin_template.php';
 
-// error_reporting(0);
+error_reporting(0);
 session_start();
-session_destroy();
+// session_destroy();
 
-if ($_SESSION['message']) {
+if ($_SESSION['addUserMessage']) {
 
-	$message = $_SESSION['message'];
+	$message = $_SESSION['addUserMessage'];
 
 	echo 	"<script type='text/javascript'>
 				alert('$message');
 			</script>";
+	$_SESSION['addUserMessage'] = NULL;
+	// session_start();
+	// session_destroy();
 }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,6 +41,10 @@ if ($_SESSION['message']) {
 			<div class="form-group">
     			<label for="InputName1">Name</label>
     			<input type="name" class="form-control" id="InputName" placeholder="Name" name="name">
+  			</div>
+  			<div class="form-group">
+    			<label for="InputName1">Username</label>
+    			<input type="name" class="form-control" id="InputName" placeholder="Username" name="username">
   			</div>	
   			<div class="form-group">
     			<label for="exampleInputEmail1">Email address</label>
