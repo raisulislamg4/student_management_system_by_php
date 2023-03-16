@@ -37,19 +37,19 @@
                 <a href="add_student.php">Add Student</a>
             </li>
             <li>
-                <a href="">View Student</a>
+                <a href="">View Students</a>
             </li>
             <li>
                 <a href="add_teacher.php">Add Teacher</a>
             </li>
             <li>
-                <a href="">View Teacher</a>
+                <a href="teacher_list.php">View Teachers</a>
             </li>
             <li>
-                <a href="">Add Courses</a>
+                <a href="add_course.php">Add Course</a>
             </li>
             <li>
-                <a href="">View Courses</a>
+                <a href="courses_list.php">View Courses</a>
             </li>
             <li>
                 <a href="add_user.php">Add User</a>
