@@ -57,3 +57,13 @@ li:hover {
 	margin-right: 10%;
 	margin-top: 5%;
 }
+
+
+ a.btn {
+     -webkit-transform: scale(0.8);
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }

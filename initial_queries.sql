@@ -3,9 +3,10 @@
 -- database create
 CREATE DATABASE pdbsms;
 
--- user table create
+
 CREATE TABLE `pdbsms`.`users` (
-	`ID` INT(11) NOT NULL AUTO_INCREMENT , 
+	`ID` INT(11) NOT NULL AUTO_INCREMENT ,
+	`NAME` VARCHAR(255) NOT NULL ,
 	`USERNAME` VARCHAR(55) NOT NULL , 
 	`EMAIL` VARCHAR(55) NOT NULL , 
 	`PHONE` VARCHAR(20) NOT NULL , 
@@ -14,7 +15,7 @@ CREATE TABLE `pdbsms`.`users` (
 	PRIMARY KEY (`ID`)) 
 ENGINE = InnoDB;
 
---CREATE ADMISSIONS TABLE
+
 CREATE TABLE `pdbsms`.`ADMISSIONS` (
 `ID` INT( 11 ) NOT NULL AUTO_INCREMENT,
 `NAME` VARCHAR( 50 ) NOT NULL ,
@@ -24,7 +25,7 @@ CREATE TABLE `pdbsms`.`ADMISSIONS` (
 PRIMARY KEY ( `ID` )
 ) ENGINE = INNODB;
 
--- insert two initial users to the USER table
+
 INSERT INTO `users` (
 	`ID`, 
 	`USERNAME`, 
@@ -57,7 +58,7 @@ VALUES (
 	'81dc9bdb52d04dc20036dbd8313ed055'
 	);
 
--------------------------create teachers table------------
+
 CREATE TABLE `teachers` (
   `ID` int(11) NOT NULL,
   `NAME` varchar(255) NOT NULL,
@@ -73,4 +74,13 @@ ALTER TABLE `teachers`
 
 ALTER TABLE `teachers`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
+
+
+CREATE TABLE `pdbsms`.`courses` (
+	`ID` INT(11) NOT NULL AUTO_INCREMENT , 
+	`COURSE_CODE` VARCHAR(20) NOT NULL , 
+	`COURSE_NAME` VARCHAR(255) NOT NULL , 
+	`CREDIT` INT(2) NOT NULL , 
+	PRIMARY KEY (`ID`)
+	) ENGINE = InnoDB;
+ALTER TABLE COURSES ADD UNIQUE (COURSE_CODE);
