@@ -38,7 +38,7 @@ VALUES (
 	'raisulislamg4@gmail.com', 
 	'01772154668', 
 	'admin', 
-	'1234'
+	'81dc9bdb52d04dc20036dbd8313ed055'
 	);
 
 INSERT INTO `users` (
@@ -54,5 +54,23 @@ VALUES (
 	'raisulislamg4@gmail.com', 
 	'01772154668', 
 	'student', 
-	'1234'
+	'81dc9bdb52d04dc20036dbd8313ed055'
 	);
+
+-------------------------create teachers table------------
+CREATE TABLE `teachers` (
+  `ID` int(11) NOT NULL,
+  `NAME` varchar(255) NOT NULL,
+  `DESIGNATION` varchar(255) NOT NULL,
+  `PHONE` varchar(20) NOT NULL,
+  `EMAIL` varchar(255) NOT NULL,
+  `EXPERTIZE` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+ALTER TABLE `teachers`
+  ADD PRIMARY KEY (`ID`);
+
+ALTER TABLE `teachers`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
