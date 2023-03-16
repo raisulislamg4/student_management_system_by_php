@@ -6,7 +6,7 @@ session_start();
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $name = $_POST['username'];
-    $pass = $_POST['password'];
+    $pass = md5($_POST['password']);
 
     $sql = "SELECT * FROM USERS WHERE USERNAME='".$name."' AND PASSWORD='".$pass."' ";
 
