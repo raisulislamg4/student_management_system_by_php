@@ -20,13 +20,13 @@ require_once "db_con.php";
 	<div class="content">
 		<h2>Admission Applicants</h2>
 		<br>
-		<table border="1px">
+		<table id="example" class="table table-striped table-bordered" style="width:100%">
 			<tr>
-				<th style="padding: 20px; font-size: 15px;">Sl</th>
-				<th style="padding: 20px; font-size: 15px;">Name</th>
-				<th style="padding: 20px; font-size: 15px;">Email</th>
-				<th style="padding: 20px; font-size: 15px;">Phone</th>
-				<th style="padding: 20px; font-size: 15px;">Message</th>
+				<th>Sl</th>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+				<th>Message</th>
 			</tr>
 
 			<?php
@@ -36,11 +36,11 @@ require_once "db_con.php";
 			?>	
 			
 			<tr>
-				<td style="padding: 20px; font-size: 15px;"><?php echo "{$sl}"; ?></td>
-				<td style="padding: 20px; font-size: 15px;"><?php echo "{$info['NAME']}"; ?></td>
-				<td style="padding: 20px; font-size: 15px;"><?php echo "{$info['EMAIL']}"; ?></td>
-				<td style="padding: 20px; font-size: 15px;"><?php echo "{$info['PHONE']}"; ?></td>
-				<td style="padding: 20px; font-size: 15px;"><?php echo "{$info['MESSAGE']}"; ?></td>
+				<td><?php echo "{$sl}"; ?></td>
+				<td><?php echo "{$info['NAME']}"; ?></td>
+				<td><?php echo "{$info['EMAIL']}"; ?></td>
+				<td><?php echo "{$info['PHONE']}"; ?></td>
+				<td><?php echo "{$info['MESSAGE']}"; ?></td>
 			</tr>
 			
 			<?php 
