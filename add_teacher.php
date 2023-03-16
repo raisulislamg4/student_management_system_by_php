@@ -1,7 +1,7 @@
 <?php 
 include 'admin_template.php';
 error_reporting(0);
-session_start();
+// session_start();
 // session_destroy();
 
 if ($_SESSION['addTeacherMessage']) {
@@ -56,7 +56,7 @@ if ($_SESSION['addTeacherMessage']) {
   			</div>
   			<div class="form-group">
     			<label for="exampleInputEmail1">Expertise</label>
-    			<input type="text" class="form-control" id="exampleInputExpertise" aria-describedby="emailHelp" placeholder="Expertise" name="expertise">
+    			<input type="text" class="form-control" id="exampleInputExpertise" aria-describedby="emailHelp" placeholder="Expertise" name="expertize">
   			</div>
   			<button type="submit" class="btn btn-primary" value="Apply" name="apply">Submit</button>
 		</form>

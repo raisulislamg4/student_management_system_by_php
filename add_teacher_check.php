@@ -9,12 +9,12 @@ if (isset($_POST['apply'])) {
     $designation_data = $_POST['designation'];
     $phone_data = $_POST['phone'];
     $email_data = $_POST['email'];
-    $expertise_data = $_POST['expertise'];
+    $expertize_data = $_POST['expertize'];
 
-    if ($name_data && $designation_data && $phone_data && $email_data && $expertise_data) {
+    if ($name_data && $designation_data && $phone_data && $email_data && $expertize_data) {
 
-        $sql="INSERT INTO TEACHERS(NAME, DESIGNATION, PHONE, EMAIL, EXPERTISE)
-            VALUES('$name_data', '$designation_data', '$phone_data', '$email_data', '$expertise_data')";
+        $sql="INSERT INTO TEACHERS(NAME, DESIGNATION, PHONE, EMAIL, EXPERTIZE)
+            VALUES('$name_data', '$designation_data', '$phone_data', '$email_data', '$expertize_data')";
 
         $result = mysqli_query($data, $sql);
 
