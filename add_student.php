@@ -1,135 +1,61 @@
 <?php 
-   
+include 'admin_template.php';
+error_reporting(0);
+// session_start();
+// session_destroy();
 
-	$host="localhost";
-	$user="root";
-	$password="";
-	$db="pdbsms";
+if ($_SESSION['addStudentMessage']) {
 
-	$data=mysqli_connect($host,$user,$password,$db);
+	$message = $_SESSION['addStudentMessage'];
 
-	if (isset($_POST['add_student'])) 
-	{
-		
-		$username=$_POST['name'];
-		$user_email=$_POST['email'];
-		$user_phone=$_POST['phone'];
-		$user_password=$_POST['password'];
-		$userrole="student";
+	echo 	"<script type='text/javascript'>
+				alert('$message');
+			</script>";
+	$_SESSION['addStudentMessage'] = NULL;
+	// session_start();
+	// session_destroy();
+}
 
-		$check="SELECT * FROM users WHERE USERNAME='$username'";
-		$check_user=mysqli_query($data,$check);
-
-		$row_count=mysqli_num_rows($check_user);
-
-		if ($row_count==1) 
-		{
-			echo "<script type='text/javascript'> alert ('Username Already Exist. Try Another One');
-			</script";
-		}
-
-		else
-		{
-
-
-		$sql="INSERT INTO users (USERNAME,EMAIL,PHONE, ROLE,PASSWORD) VALUES ('$username','$user_email','$user_phone','$userrole','$user_password')";
-
-
-		$result=mysqli_query($data,$sql);
-
-		if ($result) 
-		{
-			echo "<script type='text/javascript'> alert ('Data Upload Success');
-			</script";
-		}
-
-		else
-		{
-			echo "Uploaded Failed";
-		}
-
-	}
-	}
-	
 ?>
-
 
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add Student</title>
 
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/add_user_form.css">
 
-    <style type="text/css">
-    	
-    	label
-    	{
-    		display: inline-block;
-    		text-align: right;
-    		width: 100px;
-    		padding-top: 10px;
-    		padding-bottom: 10px;
-    	}
-
-    	.div_deg
-
-    	{
-
-    		background-color: skyblue;
-    		width: 400px;
-    		padding-top: 50px;
-    		padding-bottom: 50px;
-
-    	}
-    </style>
-
-    <title>Admin Dashboard</title>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
 <body>
+	<div class="content">
+		<h2>Add Student</h2>
 
-	<?php
-
-	include 'admin_template.php';
-
-	?>
-
-    <div class="content">
-    	<center>
-        <h1>Add Student</h1>
-
-        <div class="div_deg">
-        	
-        	<form action="#" method="POST">
-        		<div>
-        		<label>Username</label>
-        		<input type="text" name="name">
-        		</div>
-
-				<div>
-        		<label>Email</label>
-        		<input type="text" name="email">
-        		</div>
-
-        		<div>
-        		<label>Phone</label>
-        		<input type="number" name="phone">
-        		</div>
-
-        		<div>
-        		<label>Password</label>
-        		<input type="text" name="password">
-        		</div>
-
-        		<div>
-        		<input type="submit" class="btn btn-primary" name="add_student" value="Add Student">
-        		</div>
-
-        	</form>
-        </div>
-
-</center>
-
-    </div>
+		<form action="add_student_check.php" method="POST">
+			<div class="form-group">
+    			<label for="InputName1">Name</label>
+    			<input type="name" class="form-control" id="InputName" placeholder="Name" name="name">
+  			</div>
+  			<div class="form-group">
+    			<label for="InputDept1">Department</label>
+    			<input type="name" class="form-control" id="InputDept" placeholder="Department" name="department">
+  			</div>	
+  			<div class="form-group">
+    			<label for="exampleInputPhone1">Phone Number</label>
+    			<input type="number" class="form-control" id="exampleInputPhone1" placeholder="Enter Phone Number" name="phone">
+  			</div>
+  			<div class="form-group">
+    			<label for="exampleInputEmail1">Email address</label>
+    			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+  			</div>
+  			<button type="submit" class="btn btn-primary" value="Apply" name="apply">Submit</button>
+		</form>
+	</div>
 </body>
 </html>
