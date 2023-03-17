@@ -37,5 +37,17 @@ if ($_GET['user_id']) {
 		header("location:user_list.php");
 	}
 }
+if ($_GET['student_id']) {
+
+	$student_id = $_GET['student_id'];
+
+	$sql = "DELETE FROM STUDENTS WHERE ID='$student_id'";
+	$result = mysqli_query($data, $sql);
+
+	if ($result) {
+		$_SESSION['message'] = 'Student Deleted Successfully!';
+		header("location:student_list.php");
+	}
+}
 
 ?>
