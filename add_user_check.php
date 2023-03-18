@@ -10,7 +10,9 @@ if (isset($_POST['apply'])) {
     $email_data = $_POST['email'];
     $phone_data = $_POST['phone'];
     $role_data = $_POST['role'];
-    $password_data = md5($_POST['password']);
+    if ($_POST['password']) {
+            $password_data = md5($_POST['password']);
+        }
 
     if ($name_data && $username_data && $email_data && $phone_data && $password_data) {
 
