@@ -12,7 +12,7 @@ if (isset($_POST['apply'])) {
 
     if ($courseCode_data && $courseName_data && $credit_data) {
 
-        $check_courseCode="SELECT * FROM USERS WHERE USERNAME='".$courseCode_data."'";
+        $check_courseCode="SELECT * FROM COURSES WHERE COURSE_CODE='".$courseCode_data."'";
         $check_courseCode_result=mysqli_query($data, $check_courseCode);
         $check_courseCode_result_rowCount=mysqli_num_rows($check_courseCode_result);
 
