@@ -1,8 +1,10 @@
 <?php 
 include 'admin_template.php';
 require_once "db_con.php";
+error_reporting(0);
 
-    $sql = "SELECT * FROM STUDENTS";
+
+    $sql = "SELECT * FROM STUDENTS ORDER BY BATCH ASC, ROLL ASC";
 
     $result = mysqli_query($data, $sql);
 
@@ -35,6 +37,9 @@ require_once "db_con.php";
             	<th>Sl</th>
                 <th>Name</th>
                 <th>Department</th>
+                <th>Batch</th>
+                <th>Roll</th>
+                <th>Registration</th>
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Action</th>
@@ -52,9 +57,12 @@ require_once "db_con.php";
                 <td><?php echo "{$sl}"; ?></td>
                 <td><?php echo "{$info['NAME']}"; ?></td>
                 <td><?php echo "{$info['DEPARTMENT']}"; ?></td>
+                <td><?php echo "{$info['BATCH']}"; ?></td>
+                <td><?php echo "{$info['ROLL']}"; ?></td>
+                <td><?php echo "{$info['REGISTRATION']}"; ?></td>
                 <td><?php echo "{$info['EMAIL']}"; ?></td>
                 <td><?php echo "{$info['PHONE']}"; ?></td>
-                <td><?php echo "<a href='#' class='btn btn-primary a-btn-slide-text'>
+                <td><?php echo "<a href='update_student.php?student_id={$info['ID']}' class='btn btn-primary a-btn-slide-text'>
                     <span class='glyphicon glyphicon-edit' aria-hidden='true'></span>
                     <span><strong>Edit</strong></span>          
                     </a>

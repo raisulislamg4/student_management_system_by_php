@@ -54,7 +54,7 @@ require_once "db_con.php";
                 <td><?php echo "{$info['COURSE_CODE']}"; ?></td>
                 <td><?php echo "{$info['COURSE_NAME']}"; ?></td>
                 <td><?php echo "{$info['CREDIT']}"; ?></td>
-                <td><?php echo "<a href='#' class='btn btn-primary a-btn-slide-text'>
+                <td><?php echo "<a href='update_course.php?course_id={$info['ID']}' class='btn btn-primary a-btn-slide-text'>
                     <span class='glyphicon glyphicon-edit' aria-hidden='true'></span>
                     <span><strong>Edit</strong></span>          
                     </a>
