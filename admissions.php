@@ -27,6 +27,8 @@ require_once "db_con.php";
 				<th>Email</th>
 				<th>Phone</th>
 				<th>Message</th>
+				<th>Status</th>
+				<th>Action</th>
 			</tr>
 
 			<?php
@@ -41,6 +43,15 @@ require_once "db_con.php";
 				<td><?php echo "{$info['EMAIL']}"; ?></td>
 				<td><?php echo "{$info['PHONE']}"; ?></td>
 				<td><?php echo "{$info['MESSAGE']}"; ?></td>
+				<td><?php echo "{$info['STATUS']}"; ?></td>
+				<td><?php echo "<a href='update_application.php?applicant_id={$info['ID']}' class='btn btn-primary a-btn-slide-text'>
+                    <span class='glyphicon glyphicon-edit' aria-hidden='true'></span>
+                    <span><strong>Status</strong></span>          
+                    </a>
+                    <a onClick=\" javascript:return confirm('Are you sure to Delete this Application!')\" href='delete.php?applicant_id={$info['ID']}' class='btn btn-danger a-btn-slide-text'>
+                    <span class='glyphicon glyphicon-remove' aria-hidden='true'></span>
+                    <span><strong>Delete</strong></span>
+                ";?></td>
 			</tr>
 			
 			<?php 

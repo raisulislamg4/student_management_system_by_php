@@ -12,8 +12,8 @@ if (isset($_POST['apply'])) {
 
     if ($name_data && $email_data && $phone_data) {
 
-        $sql="INSERT INTO ADMISSIONS(NAME, EMAIL, PHONE, MESSAGE)
-            VALUES('$name_data', '$email_data', '$phone_data', '$message_data')";
+        $sql="INSERT INTO ADMISSIONS(NAME, EMAIL, PHONE, MESSAGE, STATUS)
+            VALUES('$name_data', '$email_data', '$phone_data', '$message_data', 'Pending')";
 
         $result = mysqli_query($data, $sql);
 
