@@ -49,5 +49,17 @@ if ($_GET['student_id']) {
 		header("location:student_list.php");
 	}
 }
+if ($_GET['applicant_id']) {
+
+	$applicant_id = $_GET['applicant_id'];
+
+	$sql = "DELETE FROM ADMISSIONS WHERE ID='$applicant_id'";
+	$result = mysqli_query($data, $sql);
+
+	if ($result) {
+		$_SESSION['message'] = 'Application Deleted Successfully!';
+		header("location:admissions.php");
+	}
+}
 
 ?>
