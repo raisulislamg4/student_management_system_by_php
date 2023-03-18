@@ -7,13 +7,16 @@ if (isset($_POST['apply'])) {
     
     $name_data = $_POST['name'];
     $department_data = $_POST['department'];
+    $batch_data = $_POST['batch'];
+    $roll_data = $_POST['roll'];
     $phone_data = $_POST['phone'];
     $email_data = $_POST['email'];
+    $registrationNo_data = $batch_data."2023".$roll_data;
 
-    if ($name_data && $department_data && $phone_data && $email_data) {
+    if ($name_data && $department_data && $batch_data && $roll_data && $phone_data && $email_data) {
 
-        $sql="INSERT INTO STUDENTS(NAME, DEPARTMENT, PHONE, EMAIL)
-            VALUES('$name_data', '$department_data', '$phone_data', '$email_data')";
+        $sql="INSERT INTO STUDENTS(NAME, DEPARTMENT, BATCH, ROLL, REGISTRATION, PHONE, EMAIL)
+            VALUES('$name_data', '$department_data', '$batch_data', '$roll_data', '$registrationNo_data', '$phone_data', '$email_data')";
 
         $result = mysqli_query($data, $sql);
 
