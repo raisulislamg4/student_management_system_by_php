@@ -14,7 +14,7 @@ require_once "db_con.php";
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Admissions</title>
-	<link rel="stylesheet" type="text/css" href="admissions.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
 </head>
 <body>
 	<div class="content">
@@ -36,7 +36,7 @@ require_once "db_con.php";
 			while ($info = $result -> fetch_assoc()) {
 
 			?>	
-			
+			<div class="data-table">
 			<tr>
 				<td><?php echo "{$sl}"; ?></td>
 				<td><?php echo "{$info['NAME']}"; ?></td>
@@ -53,7 +53,7 @@ require_once "db_con.php";
                     <span><strong>Delete</strong></span>
                 ";?></td>
 			</tr>
-			
+			</div>
 			<?php 
 			$sl++;
 

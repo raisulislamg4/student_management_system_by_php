@@ -29,6 +29,7 @@
         </div>
     </header>
     <aside>
+        <div style="width: 12% ;display: inline-block;float: left; height: 90vh;">
         <ul>
             <li>
                 <a href="admissions.php">Addmission</a>
@@ -58,6 +59,7 @@
                 <a href="user_list.php">View Users</a>
             </li>
         </ul>
+        </div>
     </aside>
 </body>
 </html>

@@ -24,10 +24,8 @@ a, a:hover{
 
 ul{
 	background-color: #424a5b;
-	width: 16%;
 	height: 100%;
-	position: fixed;
-	padding-top: 5%;
+	padding-top: 10px;
 	text-align: center;
 }
 
@@ -53,9 +51,12 @@ li:hover {
 }
 
 .content{
-	margin-left: 20%;
-	margin-right: 10%;
-	margin-top: 5%;
+	margin-left: 15px;
+	display: inline-block;
+	float: left;
+	height: 90vh;
+	overflow-y: scroll; 
+	width: 86%
 }
 
 
