@@ -29,7 +29,13 @@ require_once "db_con.php";
 	<div class="content">
 		<h2>User List</h2>
 		<br>
-		<table id="example" class="table table-striped table-bordered" style="width:100%">
+        <input class="filter" type="text" id="usernameInput" onkeyup="userNameSearchFunction()" placeholder="Search">
+        <label class="filter-label">Username</label>
+        <input class="filter" type="text" id="phoneInput" onkeyup="phoneSearchFunction()" placeholder="Search">
+        <label class="filter-label">Phone Number</label>
+        <br>
+        <br>
+		<table id="myTable" class="table table-striped table-bordered" style="width:100%">
         <thead>
             <tr>
             	<th>Sl</th>
@@ -73,6 +79,50 @@ require_once "db_con.php";
 
         </tbody>
     </table>
+    <script type="text/javascript">
+        function userNameSearchFunction() {
+            // Declare variables
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("usernameInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
 
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[2];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+        function phoneSearchFunction() {
+            // Declare variables
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("phoneInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[4];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>

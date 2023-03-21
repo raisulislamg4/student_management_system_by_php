@@ -20,7 +20,16 @@ require_once "db_con.php";
 	<div class="content">
 		<h2>Admission Applicants</h2>
 		<br>
-		<table id="example" class="table table-striped table-bordered" style="width:100%">
+
+		<input class="filter" type="text" id="phoneInput" onkeyup="phoneSearchFunction()" placeholder="Search">
+		<label class="filter-label">Phone</label>
+		<input class="filter" type="text" id="emailInput" onkeyup="emailSearchFunction()" placeholder="Search">
+		<label class="filter-label">Email</label>
+		<input class="filter" type="text" id="myInput" onkeyup="nameSearchFunction()" placeholder="Search">
+		<label class="filter-label">Name</label>
+		<br>
+		<br>
+		<table id="myTable" class="table table-striped table-bordered" style="width:100%">
 			<tr>
 				<th>Sl</th>
 				<th>Name</th>
@@ -61,5 +70,70 @@ require_once "db_con.php";
 			?>
 		</table>
 	</div>
+	<script>
+		function nameSearchFunction() {
+  			// Declare variables
+  			var input, filter, table, tr, td, i, txtValue;
+  			input = document.getElementById("myInput");
+  			filter = input.value.toUpperCase();
+  			table = document.getElementById("myTable");
+  			tr = table.getElementsByTagName("tr");
+
+  			// Loop through all table rows, and hide those who don't match the search query
+  			for (i = 0; i < tr.length; i++) {
+    			td = tr[i].getElementsByTagName("td")[1];
+    			if (td) {
+      				txtValue = td.textContent || td.innerText;
+      				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        				tr[i].style.display = "";
+      				} else {
+        				tr[i].style.display = "none";
+      				}
+    			}
+  			}
+		}
+		function emailSearchFunction() {
+  			// Declare variables
+  			var input, filter, table, tr, td, i, txtValue;
+  			input = document.getElementById("emailInput");
+  			filter = input.value.toUpperCase();
+  			table = document.getElementById("myTable");
+  			tr = table.getElementsByTagName("tr");
+
+  			// Loop through all table rows, and hide those who don't match the search query
+  			for (i = 0; i < tr.length; i++) {
+    			td = tr[i].getElementsByTagName("td")[2];
+    			if (td) {
+      				txtValue = td.textContent || td.innerText;
+      				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        				tr[i].style.display = "";
+      				} else {
+        				tr[i].style.display = "none";
+      				}
+    			}
+  			}
+		}
+		function phoneSearchFunction() {
+  			// Declare variables
+  			var input, filter, table, tr, td, i, txtValue;
+  			input = document.getElementById("phoneInput");
+  			filter = input.value.toUpperCase();
+  			table = document.getElementById("myTable");
+  			tr = table.getElementsByTagName("tr");
+
+  			// Loop through all table rows, and hide those who don't match the search query
+  			for (i = 0; i < tr.length; i++) {
+    			td = tr[i].getElementsByTagName("td")[3];
+    			if (td) {
+      				txtValue = td.textContent || td.innerText;
+      				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        				tr[i].style.display = "";
+      				} else {
+        				tr[i].style.display = "none";
+      				}
+    			}
+  			}
+		}
+	</script>
 </body>
 </html>

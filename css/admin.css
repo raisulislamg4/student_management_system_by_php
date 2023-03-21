@@ -11,6 +11,18 @@
 	padding-left: 30px;
 }
 
+.filter{
+	float: right;
+	margin-right: 4px;
+}
+
+.filter-label{
+	float: right;
+	margin-right: 4px;
+	margin-left: 50px;
+}
+
+
 a, a:hover{
 	text-decoration: none!important;
 	color: white!important;
@@ -78,7 +90,7 @@ li:hover {
  	float: left;
  	margin-left: 5%;
  	width: 20%;
- 	height: 10%;
+ 	height: 12vh;
  	background-color: rgb(122, 250, 62);
  	border-radius: 10px;
  	text-align: center;
@@ -91,7 +103,7 @@ li:hover {
  	float: left;
  	margin-left: 5%;
  	width: 20%;
- 	height: 10%;
+ 	height: 12vh;
  	background-color: rgb(62, 250, 143);
  	border-radius: 10px;
  	text-align: center;
@@ -104,7 +116,7 @@ li:hover {
  	float: left;
  	margin-left: 5%;
  	width: 20%;
- 	height: 10%;
+ 	height: 12vh;
  	background-color: rgb(222, 222, 64);
  	border-radius: 10px;
  	text-align: center;
@@ -116,7 +128,7 @@ li:hover {
  .applicants_card{
  	float: left;
  	width: 20%;
- 	height: 10%;
+ 	height: 12vh;
  	background-color: rgb(237, 62, 250);
  	border-radius: 10px;
  	text-align: center;
