@@ -91,7 +91,7 @@ li:hover {
  	margin-left: 5%;
  	width: 20%;
  	height: 12vh;
- 	background-color: rgb(122, 250, 62);
+ 	background-color: rgb(63 215 219);
  	border-radius: 10px;
  	text-align: center;
  	padding-top: 10px;
@@ -104,7 +104,7 @@ li:hover {
  	margin-left: 5%;
  	width: 20%;
  	height: 12vh;
- 	background-color: rgb(62, 250, 143);
+ 	background-color: rgb(153 223 183);
  	border-radius: 10px;
  	text-align: center;
  	padding-top: 10px;
@@ -117,7 +117,7 @@ li:hover {
  	margin-left: 5%;
  	width: 20%;
  	height: 12vh;
- 	background-color: rgb(222, 222, 64);
+ 	background-color: rgb(225 225 142);
  	border-radius: 10px;
  	text-align: center;
  	padding-top: 10px;
@@ -129,7 +129,7 @@ li:hover {
  	float: left;
  	width: 20%;
  	height: 12vh;
- 	background-color: rgb(237, 62, 250);
+ 	background-color: rgb(161 200 211);
  	border-radius: 10px;
  	text-align: center;
  	padding-top: 10px;
