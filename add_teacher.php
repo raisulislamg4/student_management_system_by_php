@@ -40,23 +40,23 @@ if ($_SESSION['addTeacherMessage']) {
 		<form action="add_teacher_check.php" method="POST">
 			<div class="form-group">
     			<label for="InputName1">Name</label>
-    			<input type="name" class="form-control" id="InputName" placeholder="Name" name="name">
+    			<input type="name" class="form-control" id="InputName" placeholder="Name" name="name" required>
   			</div>
   			<div class="form-group">
     			<label for="InputName1">Designation</label>
-    			<input type="name" class="form-control" id="InputName" placeholder="Designation" name="designation">
+    			<input type="name" class="form-control" id="InputName" placeholder="Designation" name="designation" required>
   			</div>	
   			<div class="form-group">
     			<label for="exampleInputPhone1">Phone Number</label>
-    			<input type="number" class="form-control" id="exampleInputPhone1" placeholder="Enter Phone Number" name="phone">
+    			<input type="number" class="form-control" id="exampleInputPhone1" placeholder="Enter Phone Number" name="phone" required>
   			</div>
   			<div class="form-group">
     			<label for="exampleInputEmail1">Email address</label>
-    			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+    			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" required>
   			</div>
   			<div class="form-group">
     			<label for="exampleInputEmail1">Expertise</label>
-    			<input type="text" class="form-control" id="exampleInputExpertise" aria-describedby="emailHelp" placeholder="Expertise" name="expertize">
+    			<input type="text" class="form-control" id="exampleInputExpertise" aria-describedby="emailHelp" placeholder="Expertise" name="expertize" required>
   			</div>
   			<button type="submit" class="btn btn-primary" value="Apply" name="apply">Submit</button>
 		</form>

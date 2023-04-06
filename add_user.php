@@ -40,30 +40,30 @@ if ($_SESSION['addUserMessage']) {
 		<form action="add_user_check.php" method="POST">
 			<div class="form-group">
     			<label for="InputName1">Name</label>
-    			<input type="name" class="form-control" id="InputName" placeholder="Name" name="name">
+    			<input type="name" class="form-control" id="InputName" placeholder="Name" name="name" required>
   			</div>
   			<div class="form-group">
     			<label for="InputName1">Username</label>
-    			<input type="name" class="form-control" id="InputName" placeholder="Username" name="username">
+    			<input type="name" class="form-control" id="InputName" placeholder="Username" name="username" required>
   			</div>	
   			<div class="form-group">
     			<label for="exampleInputEmail1">Email address</label>
-    			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+    			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" required>
   			</div>
   			<div class="form-group">
     			<label for="exampleInputPhone1">Phone Number</label>
-    			<input type="number" class="form-control" id="exampleInputPhone1" placeholder="Enter Phone Number" name="phone">
+    			<input type="number" class="form-control" id="exampleInputPhone1" placeholder="Enter Phone Number" name="phone" required>
   			</div>
   			<div class="form-group">
     			<label for="exampleFormControlSelect1">Role</label>
-    			<select class="form-control" id="exampleFormControlSelect1" name="role">
+    			<select class="form-control" id="exampleFormControlSelect1" name="role" required>
       				<option>admin</option>
       				<option>student</option>
     			</select>
   			</div>
   			<div class="form-group">
     			<label for="exampleInputPassword1">Password</label>
-    			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+    			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" required>
   			</div>
   			
   			<button type="submit" class="btn btn-primary" value="Apply" name="apply">Submit</button>

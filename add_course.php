@@ -40,15 +40,15 @@ if ($_SESSION['addCourseMessage']) {
 		<form action="add_course_check.php" method="POST">
 			<div class="form-group">
     			<label for="InputName1">Course Code*</label>
-    			<input type="name" class="form-control" id="InputName" placeholder="Course Code" name="course_code">
+    			<input type="name" class="form-control" id="InputName" placeholder="Course Code" name="course_code" required>
   			</div>
   			<div class="form-group">
     			<label for="InputName1">Course Name*</label>
-    			<input type="name" class="form-control" id="InputName" placeholder="Course Name" name="course_name">
+    			<input type="name" class="form-control" id="InputName" placeholder="Course Name" name="course_name" required>
   			</div>	
   			<div class="form-group">
     			<label for="exampleInputCredit1">Credit*</label>
-    			<input type="number" class="form-control" id="exampleInputCredit1" placeholder="Credit" name="credit">
+    			<input type="number" class="form-control" id="exampleInputCredit1" placeholder="Credit" name="credit" required>
   			</div>
   			<button type="submit" class="btn btn-primary" value="Apply" name="apply">Submit</button>
 		</form>

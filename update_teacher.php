@@ -61,23 +61,23 @@ error_reporting(0);
 		<form action="#" method="POST">
 			<div class="form-group">
     			<label for="InputName1">Name</label>
-    			<input type="text" class="form-control" name="name" value="<?php echo "{$info['NAME']}"; ?>">
+    			<input type="text" class="form-control" name="name" value="<?php echo "{$info['NAME']}"; ?>" required>
   			</div>
   			<div class="form-group">
     			<label for="InputDept1">Designation</label>
-    			<input type="name" class="form-control" id="InputDesig" name="designation" value="<?php echo "{$info['DESIGNATION']}"; ?>">
+    			<input type="name" class="form-control" id="InputDesig" name="designation" value="<?php echo "{$info['DESIGNATION']}"; ?>" required>
   			</div>
   			<div class="form-group">
     			<label for="exampleInputPhone1">Phone Number</label>
-    			<input type="number" class="form-control" id="exampleInputPhone1" name="phone" value="<?php echo "{$info['PHONE']}"; ?>">
+    			<input type="number" class="form-control" id="exampleInputPhone1" name="phone" value="<?php echo "{$info['PHONE']}"; ?>" required>
   			</div>
   			<div class="form-group">
     			<label for="exampleInputEmail1">Email address</label>
-    			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value="<?php echo "{$info['EMAIL']}"; ?>">
+    			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value="<?php echo "{$info['EMAIL']}"; ?>" required>
   			</div>
   			<div class="form-group">
     			<label for="InputExpertize1">Expertize</label>
-    			<input type="name" class="form-control" id="InputExpertize" name="expertize" value="<?php echo "{$info['EXPERTIZE']}"; ?>">
+    			<input type="name" class="form-control" id="InputExpertize" name="expertize" value="<?php echo "{$info['EXPERTIZE']}"; ?>" required>
   			</div>
   			<button type="submit" class="btn btn-primary" value="Apply" name="update">Update</button>
 		</form>

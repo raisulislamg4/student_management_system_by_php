@@ -61,15 +61,15 @@ error_reporting(0);
 		<form action="#" method="POST">
 			<div class="form-group">
     			<label for="InputName1">Course Code*</label>
-    			<input type="text" readonly class="form-control" name="course_code" value="<?php echo "{$info['COURSE_CODE']}"; ?>">
+    			<input type="text" readonly class="form-control" name="course_code" value="<?php echo "{$info['COURSE_CODE']}"; ?>" required>
   			</div>
   			<div class="form-group">
     			<label for="InputName1">Course Name*</label>
-    			<input type="name" class="form-control" id="InputDesig" name="course_name" value="<?php echo "{$info['COURSE_NAME']}"; ?>">
+    			<input type="name" class="form-control" id="InputDesig" name="course_name" value="<?php echo "{$info['COURSE_NAME']}"; ?>" required>
   			</div>
   			<div class="form-group">
     			<label for="exampleInputCredit1">Credit*</label>
-    			<input type="number" class="form-control" id="exampleInputCredit1" name="credit" value="<?php echo "{$info['CREDIT']}"; ?>">
+    			<input type="number" class="form-control" id="exampleInputCredit1" name="credit" value="<?php echo "{$info['CREDIT']}"; ?>" required>
     		</div>
   			<button type="submit" class="btn btn-primary" value="Apply" name="update">Update</button>
 		</form>

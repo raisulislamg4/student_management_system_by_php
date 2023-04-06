@@ -65,7 +65,7 @@ error_reporting(0);
 		<form action="#" method="POST">
 			<div class="form-group">
     			<label for="InputName1">Name</label>
-    			<input type="name" class="form-control" id="InputName" name="name" value="<?php echo "{$info['NAME']}"; ?>">
+    			<input type="name" class="form-control" id="InputName" name="name" value="<?php echo "{$info['NAME']}"; ?>" required>
   			</div>
   			<div class="form-group">
     			<label for="InputName1">Username</label>
@@ -73,11 +73,11 @@ error_reporting(0);
   			</div>	
   			<div class="form-group">
     			<label for="exampleInputEmail1">Email address</label>
-    			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value="<?php echo "{$info['EMAIL']}"; ?>">
+    			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value="<?php echo "{$info['EMAIL']}"; ?>" required>
   			</div>
   			<div class="form-group">
     			<label for="exampleInputPhone1">Phone Number</label>
-    			<input type="number" class="form-control" id="exampleInputPhone1" name="phone" value="<?php echo "{$info['PHONE']}"; ?>">
+    			<input type="number" class="form-control" id="exampleInputPhone1" name="phone" value="<?php echo "{$info['PHONE']}"; ?>" required>
   			</div>
   			<div class="form-group">
     			<label for="exampleFormControlSelect1">Role</label>
@@ -88,7 +88,7 @@ error_reporting(0);
   			</div>
   			<div class="form-group">
     			<label for="exampleInputPassword1">Password</label>
-    			<input type="password" class="form-control" id="exampleInputPassword1" name="password">
+    			<input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
   			</div>
   			<button type="submit" class="btn btn-primary" value="Apply" name="update">Update</button>
 		</form>

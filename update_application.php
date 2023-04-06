@@ -58,15 +58,15 @@ require_once "db_con.php";
   			</div>
   			<div class="form-group">
     			<label for="exampleInputEmail1">Email address</label>
-    			<input type="email" readonly class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value="<?php echo "{$info['EMAIL']}"; ?>">
+    			<input type="email" readonly class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value="<?php echo "{$info['EMAIL']}"; ?>" required>
   			</div>
   			<div class="form-group">
     			<label for="exampleInputEmail1">Phone</label>
-    			<input type="email" readonly class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value="<?php echo "{$info['PHONE']}"; ?>">
+    			<input type="email" readonly class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value="<?php echo "{$info['PHONE']}"; ?>" required>
   			</div>
   			<div class="form-group">
     			<label for="exampleInputEmail1">Message</label>
-    			<input type="email" readonly class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value="<?php echo "{$info['MESSAGE']}"; ?>">
+    			<input type="email" readonly class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value="<?php echo "{$info['MESSAGE']}"; ?>" required>
   			</div>
   			<div class="form-group">
     			<label for="exampleFormControlSelect1">Status</label>
