@@ -13,4 +13,5 @@ if(!$data){
 // else{
 //     echo "Ok!";
 // }
+// echo "Opss! <br>Error: 404 Not Found"
 ?>

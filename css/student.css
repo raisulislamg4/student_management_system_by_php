@@ -1,0 +1,53 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Comic Sans MS";
+}
+
+.header{
+	background-color: skyblue;
+	
+	line-height: 70px;
+	padding-left: 30px;
+}
+
+a, a:hover{
+	text-decoration: none!important;
+	color: white!important;
+	font-weight: bold;
+}
+
+.logout{
+	float: right;
+	padding-right: 30px;
+}
+
+ul{
+	background-color: #424a5b;
+	width: 16%;
+	height: 100%;
+	position: fixed;
+	padding-top: 5%;
+	text-align: center;
+}
+
+ul li{
+	list-style: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+
+ul li a{
+	color: white;
+	font-weight: bold;
+}
+
+ul li a:hover{
+	color: skyblue!important;
+	text-decoration: none;
+}
+
+li:hover {
+  	background-color: rgba(0, 0, 0, 0.25);
+}

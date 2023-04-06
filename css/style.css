@@ -7,7 +7,7 @@
 nav{
 	position: fixed;
 	background-color: #393939;
-	height: 10%;
+	height: 8%;
 	width: 100%;
 	z-index: 1;
 }
@@ -31,13 +31,26 @@ ul{
 ul li{
 	display: inline-block;
 	line-height: 50px;
-	margin: 0 10px; ;
+	margin: 0 10px;
 }
 
 ul li a{
 	text-decoration: none;
 	color: white;
 	font-size: 17px;
+	padding: 10px;
+}
+
+ul li a:hover{
+	text-decoration: none;
+	color: skyblue;
+	padding-top: 2px;
+
+}
+
+li:hover{
+	background-color: rgba(0, 0, 0, 0.25);
+	height: 8%;
 }
 
 .main_img{
@@ -98,25 +111,30 @@ p{
 .input_deg{
 	width: 30%;
 	height: 40px;
-	border-radius: 25px;
+	border-radius: 10px;
 	border: 1px solid black;
 }
 
-.contact_form{
+.admission_form{
+	padding-top: 10px;
+}
+
+.input_div{
 	padding-top: 10px;
 }
 
 .input_text{
 	width: 30%;
 	height: 120px;
-	border-radius: 25px;
+	border-radius: 10px;
 	border: 1px solid black;
 }
 
 #submit{
 	position: relative;
-	width: 15%;
+	width: 20%;
 	left: 5%;
+	font-weight: bold;
 }
 
 footer{

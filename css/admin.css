@@ -1,0 +1,138 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Comic Sans MS";
+}
+
+.header{
+	background-color: rgb(55, 125, 113);
+	
+	line-height: 70px;
+	padding-left: 30px;
+}
+
+.filter{
+	float: right;
+	margin-right: 4px;
+}
+
+.filter-label{
+	float: right;
+	margin-right: 4px;
+	margin-left: 50px;
+}
+
+
+a, a:hover{
+	text-decoration: none!important;
+	color: white!important;
+	font-weight: bold;
+}
+
+.logout{
+	float: right;
+	padding-right: 30px;
+}
+
+ul{
+	background-color: #424a5b;
+	height: 100%;
+	padding-top: 10px;
+	text-align: center;
+}
+
+ul li{
+	list-style: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+
+ul li a{
+	color: white;
+	font-weight: bold;
+}
+
+ul li a:hover{
+	color: skyblue!important;
+	text-decoration: none;
+}
+
+li:hover {
+  	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.content{
+	margin-left: 15px;
+	display: inline-block;
+	float: left;
+	height: 90vh;
+	overflow-y: scroll; 
+	width: 86%
+}
+
+
+ a.btn {
+     -webkit-transform: scale(0.8);
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+ .card{
+ 	width: 100%;
+ 	height: 10%;
+ }
+
+ .student_card{
+ 	float: left;
+ 	margin-left: 5%;
+ 	width: 20%;
+ 	height: 12vh;
+ 	background-color: rgb(63 215 219);
+ 	border-radius: 10px;
+ 	text-align: center;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	font-weight: bold;
+ }
+
+  .teacher_card{
+ 	float: left;
+ 	margin-left: 5%;
+ 	width: 20%;
+ 	height: 12vh;
+ 	background-color: rgb(153 223 183);
+ 	border-radius: 10px;
+ 	text-align: center;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	font-weight: bold;
+ }
+
+ .course_card{
+ 	float: left;
+ 	margin-left: 5%;
+ 	width: 20%;
+ 	height: 12vh;
+ 	background-color: rgb(225 225 142);
+ 	border-radius: 10px;
+ 	text-align: center;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	font-weight: bold;
+ }
+
+ .applicants_card{
+ 	float: left;
+ 	width: 20%;
+ 	height: 12vh;
+ 	background-color: rgb(161 200 211);
+ 	border-radius: 10px;
+ 	text-align: center;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	font-weight: bold;
+ }

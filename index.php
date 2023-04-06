@@ -1,3 +1,20 @@
+<?php 
+
+error_reporting(0);
+session_start();
+session_destroy();
+
+if ($_SESSION['message']) {
+
+	$message = $_SESSION['message'];
+
+	echo 	"<script type='text/javascript'>
+				alert('$message');
+			</script>";
+}
+
+?>
+
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
@@ -5,7 +22,7 @@
 	<meta charset="utf-8">
 	<title>Student Management System</title>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -85,35 +102,35 @@
 	</div>
 
 	<center>
-		<h1 class="section_div">Contact Us</h1>
+		<h1 class="section_div">Admission Form</h1>
 	</center>
 	<div align="center" class="admission_form">
-		<form>
-			<div class="contact_form">
-				<label class="label_text">Name</label>
-				<input class="input_deg" type="text" name="">
+		<form action="admission_form_check.php" method="POST">
+			<div class="input_div">
+				<label class="label_text">Name*</label>
+				<input class="input_deg" type="text" name="name">
 			</div>
-			<div class="contact_form">
-				<label class="label_text">Email</label>
-				<input class="input_deg" type="text" name="">
+			<div class="input_div">
+				<label class="label_text">Email*</label>
+				<input class="input_deg" type="text" name="email">
 			</div>
-			<div class="contact_form">
-				<label class="label_text">Phone</label>
-				<input class="input_deg" type="text" name="">
+			<div class="input_div">
+				<label class="label_text">Phone*</label>
+				<input class="input_deg" type="text" name="phone">
 			</div>
-			<div class="contact_form">
+			<div class="input_div">
 				<label class="label_text">Message</label>
-				<textarea class="input_text"></textarea>
+				<textarea class="input_text" name="message"></textarea>
 			</div>
-			<div class="contact_form">
-				<input class="btn btn-default" id="submit" type="submit" value="Send">
+			<div class="input_div">
+				<input class="btn btn-default" id="submit" type="submit" value="Apply" name="apply">
 			</div>
 		</form>
 	</div>
 
 	<footer>
 		<h4 class="footer_text">Copyright © 2023 | All Rights Reserve by DB_Group-3_Raisul_Islam</h4>
-		<h5 class="footer_text">The Team: 58_Raisul, 57_Salahuddin, 47_Shahinur, 42_Nazrul, 36_Kallol, 50_Rakibul, 26_Chadni</h5>
+		<h5 class="footer_text">The Team: 58_Raisul, 57_Salahuddin, 42_Nazrul</h5>
 	</footer>
 
 <!-- Latest compiled and minified JavaScript -->
