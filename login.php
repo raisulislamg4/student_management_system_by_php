@@ -12,7 +12,7 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
-<body background="image/login_form_bg.jpg" class="login_body_deg">
+<body class="login_body_deg">
 	<center>
 		<div class="login_div_deg">
 			<center class="login_title_deg">

@@ -1,7 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
-	font-family: "Comic Sans MS";
+	font-family: "Arial";
 }
 
 nav{
@@ -192,6 +192,7 @@ footer{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
+	background-color: #d9e9db;
 }
 
 .login_input_deg{

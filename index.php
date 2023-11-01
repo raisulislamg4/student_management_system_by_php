@@ -129,8 +129,8 @@ if ($_SESSION['message']) {
 	</div>
 
 	<footer>
-		<h4 class="footer_text">Copyright © 2023 | All Rights Reserve by DB_Group-3_Raisul_Islam</h4>
-		<h5 class="footer_text">The Team: 58_Raisul, 57_Salahuddin, 42_Nazrul</h5>
+		<h4 class="footer_text">Copyright © 2023 | All Rights Reserve by E-C&WE_GR_11</h4>
+		<h5 class="footer_text">The Team: 58_Raisul (Team Lead), 57_Salahuddin, 15_Nishat, 47_Shahinur</h5>
 	</footer>
 
 <!-- Latest compiled and minified JavaScript -->
